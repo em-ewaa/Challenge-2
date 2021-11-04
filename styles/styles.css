@@ -1,0 +1,93 @@
+:root {
+  --vdark-blue: hsl(233, 47%, 7%);
+  --ddes-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --par: hsla(0, 0%, 100%, 0.75);
+  --stat: hsla(0, 0%, 100%, 0.6);
+  font: 10px/25px 'Inter', sans-serif;
+  /* font-family: 'Lexend Deca', sans-serif; */
+}
+* {
+  /* border: 1px red solid; */
+  margin: 0;
+}
+body {
+  background-color: var(--vdark-blue);
+  color: var(--white);
+  font-size: 1.5em;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.bubble {
+  background-color: var(--ddes-blue);
+  overflow: hidden;
+  border-radius: 15px;
+  /* margin: 25% auto; */
+  /* max-width: 330px; */
+}
+
+.img {
+  background-image: url("/Challenge-2/images/image-header-mobile.jpg");
+  padding-top: 75%;
+  background-size: cover;
+  background-color: var(--soft-violet);
+  background-blend-mode: multiply;
+  /* max-width: 330px; */
+  
+}
+
+.container {
+  padding: 3.5rem 3rem 2.5rem 3rem;
+}
+.container > * {
+  padding: .8rem 0;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 3.5rem;
+  min-width: 270px;
+}
+
+span {
+  color: var(--soft-violet);
+}
+
+p:not(.data p) {
+  color: var(--par);
+  padding-bottom: 2.8rem;
+  width: 255px;
+  
+}
+
+/* DATA  */
+.data {
+  padding: 1.5rem;
+}
+h2 + p {
+  font-family: 'Lexend Deca', sans-serif;
+  color: var(--stat);
+  line-height: 2rem;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  padding-top: .8rem;
+}
+
+@media only screen and (min-width: 480px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+  .bubble {
+    width: 80vw;
+  }
+}
