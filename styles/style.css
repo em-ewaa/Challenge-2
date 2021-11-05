@@ -101,20 +101,25 @@ h2 + p {
     padding-top: 73.5%;
   }
   .container {
+    padding: 5rem;
     align-items: center;
     height: 100%;
   }
   h1 {
     padding: 1rem 0;
+    min-width: 270px;
   }
   p:not(.data p) {
     padding: 3rem;
+    min-width: 270px;
   }
   .data {
     padding: 1.5rem;
   }
 }
-@media only screen and (max-width: 768px) {
+
+
+@media only screen and (max-width: 425px) {
   .bubble {
     width: 87vw;
     min-width: 326px;
