@@ -7,6 +7,7 @@
   --stat: hsla(0, 0%, 100%, 0.6);
   font: 10px/25px 'Inter', sans-serif;
 }
+
 * {
   margin: 0;
 }
@@ -75,7 +76,7 @@ p:not(.data p) {
   justify-content: space-between;
 }
 
-h2 + p {
+h2+p {
   font-family: 'Lexend Deca', sans-serif;
   line-height: 2rem;
   color: var(--stat);
@@ -89,30 +90,36 @@ h2 + p {
   body {
     text-align: center;
   }
+
   .bubble {
     width: 80vw;
     min-width: 300px;
     display: block;
   }
+
   .img {
     background: no-repeat url("/Challenge-2/images/image-header-mobile.jpg");
     background-size: cover;
     background-color: var(--soft-violet);
     padding-top: 73.5%;
   }
+
   .container {
     padding: 5rem;
     align-items: center;
     height: 100%;
   }
+
   h1 {
     padding: 1rem 0;
     min-width: 270px;
   }
+
   p:not(.data p) {
     padding: 3rem;
     min-width: 270px;
   }
+
   .data {
     padding: 1.5rem;
   }
@@ -124,25 +131,29 @@ h2 + p {
     width: 87vw;
     min-width: 326px;
   }
+
   .container {
     padding: 3.5rem 3rem 2.5rem 3rem;
   }
+
   h1 {
     font-size: 2.8rem;
     line-height: 3.5rem;
     min-width: 270px;
     max-width: 320px;
   }
+
   p:not(.data p) {
     padding-bottom: 2.8rem;
     min-width: 255px;
     max-width: 335px;
   }
+
   .numbers {
     flex-direction: column;
   }
 
-  h2 + p {
+  h2+p {
     font-size: 1.2rem;
     padding-top: .7rem;
   }
